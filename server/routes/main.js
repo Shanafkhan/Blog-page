@@ -8,9 +8,10 @@ router.get('',(req,res) => {
 
 router.get('/about',(req,res) => {
     const locals = {
-        title : "About"
+        title : "About",
+        description: "This is a node js blog"
     }
-    res.render('index' , {locals});
+    res.render('About' , {locals});
 });
 
 module.exports = router;
